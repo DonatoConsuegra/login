@@ -10,6 +10,9 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 import kotlinx.coroutines.scheduling.Task;
 
 public class MainActivity extends AppCompatActivity {
@@ -35,13 +38,14 @@ public class MainActivity extends AppCompatActivity {
             tilusario.setError("Error ingrese una cédula válida");
         }
     }
+
     public void buttonCancelar(View view){
         Toast.makeText(this, "Ingresa", Toast.LENGTH_SHORT).show();
         TextInputLayout tilusuario = findViewById(R.id.tilusuario);
         TextInputEditText txtCedula = findViewById(R.id.txtCedula);
         String cedula = txtCedula.getText().toString();
         if (cedula.equals("") || cedula.length()!=10) {
-            tilusario.setError("Error ingrese una cédula válida");
+            tilusario.setError("Cancela el ingreso");
         }
     }
 }
