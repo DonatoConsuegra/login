@@ -45,7 +45,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/clave"
-                android:hint="Clave" />
+                android:hint=" Clave" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </LinearLayout>
@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="230dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginBottom="170dp"
         android:text="Ingresar" />
 
     <Button

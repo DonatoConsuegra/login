@@ -1,12 +1,16 @@
 package com.example.login1;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import kotlinx.coroutines.scheduling.Task;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,4 +26,22 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void buttonIngresar(View view) {
+        Toast.makeText(this, "Ingresa", Toast.LENGTH_SHORT).show();
+        TextInputLayout tilusuario = findViewById(R.id.tilusuario);
+        TextInputEditText txtCedula = findViewById(R.id.txtCedula);
+        String cedula = txtCedula.getText().toString();
+        if (cedula.equals("") || cedula.length()!=10) {
+            tilusario.setError("Error ingrese una cédula válida");
+        }
+    }
+    public void buttonCancelar(View view){
+        Toast.makeText(this, "Ingresa", Toast.LENGTH_SHORT).show();
+        TextInputLayout tilusuario = findViewById(R.id.tilusuario);
+        TextInputEditText txtCedula = findViewById(R.id.txtCedula);
+        String cedula = txtCedula.getText().toString();
+        if (cedula.equals("") || cedula.length()!=10) {
+            tilusario.setError("Error ingrese una cédula válida");
+        }
+    }
 }
