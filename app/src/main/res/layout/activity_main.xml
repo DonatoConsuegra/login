@@ -29,6 +29,7 @@
             android:layout_height="81dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IdCed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/person"
@@ -42,6 +43,7 @@
             android:layout_height="90dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IdClave"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/clave"

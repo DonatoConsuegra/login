@@ -13,8 +13,6 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import kotlinx.coroutines.scheduling.Task;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -31,21 +29,21 @@ public class MainActivity extends AppCompatActivity {
 
     public void buttonIngresar(View view) {
         Toast.makeText(this, "Ingresa", Toast.LENGTH_SHORT).show();
-        TextInputLayout tilusuario = findViewById(R.id.tilusuario);
-        TextInputEditText txtCedula = findViewById(R.id.txtCedula);
-        String cedula = txtCedula.getText().toString();
+        TextInputLayout IdCed = findViewById(R.id.IdCed);
+        TextInputEditText IdClave = findViewById(R.id.IdClave);
+        String cedula = IdClave.getText().toString();
         if (cedula.equals("") || cedula.length()!=10) {
-            tilusario.setError("Error ingrese una cédula válida");
+            IdCed.setError("Error ingrese una cédula válida");
         }
     }
 
     public void buttonCancelar(View view){
         Toast.makeText(this, "Ingresa", Toast.LENGTH_SHORT).show();
-        TextInputLayout tilusuario = findViewById(R.id.tilusuario);
-        TextInputEditText txtCedula = findViewById(R.id.txtCedula);
-        String cedula = txtCedula.getText().toString();
+        TextInputLayout IdCed = findViewById(R.id.IdCed);
+        TextInputEditText IdClave = findViewById(R.id.IdClave);
+        String cedula = IdClave.getText().toString();
         if (cedula.equals("") || cedula.length()!=10) {
-            tilusario.setError("Cancela el ingreso");
+            IdCed.setError("Cancela el ingreso");
         }
     }
 }
